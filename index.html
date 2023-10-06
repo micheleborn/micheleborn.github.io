@@ -1,1 +1,319 @@
-Hello world - index.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>michele born</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300..900&display=swap" rel="stylesheet">  <style>
+body {
+    background-color: f9f9f9;
+    width: 100%;
+    padding: 0px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: #242423;
+}  
+
+* {
+    margin: 0px;
+}
+
+#wrapper {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-basis: 50%;
+    flex-direction: row;
+}
+
+
+.header-left, .footer-left {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 11px;
+    text-transform: uppercase;
+    row-gap: 3px;
+}
+
+.header-left {
+    max-width: 150px;
+}
+
+.header-right, .footer-right {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 5px;
+}
+
+a {
+    color: #a59f8e;
+    text-decoration: none;
+}
+
+h1 {
+   font-size: 200px;
+   font-weight: 700;
+   line-height: 200px;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.links {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.highlight {
+    background-color: #e2e0d9;
+    max-width: fit-content;
+    padding: 2px 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+button#toggleLoop {
+    background: #555552;
+    border: 0px;
+    color: #f9f9f9;
+    padding: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.description {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-size: 14px;
+    width: 62%;
+    letter-spacing: .5px;
+}
+
+#output {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+    .fade-out {
+        opacity: 0!important;
+        transition: opacity 1s ease-in-out;
+    }
+
+
+    @media (max-width: 1000px) {
+
+header, footer {
+display: flex;
+justify-content: space-between;
+padding: 50px;
+flex-basis: 50%;
+flex-direction: column;
+row-gap: 50px;
+}
+    
+
+h1 {
+font-size: 120px;
+font-weight: 700;
+line-height: 120px;
+}
+    }
+
+
+    @media (max-width: 780px) {
+
+        header, footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-basis: 50%;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+}
+
+
+    </style>
+
+  
+</head>
+<body>
+
+<div id="wrapper">
+    <header>
+    <div class="header-left">
+        <div><h2>Front-end + Wordpress Developer</h2></div>
+        <div>1998 - Present</div>
+    </div>
+    <div class="header-right">
+        <div class="links"><a href="https://www.github.com/micheleborn">Github</a></div>
+        <div class="links"><a href="https://codepen.io/micheleborn">Codepen</a></div>
+    <div class="links"><a href="https://linkedin.com/in/micheleborn">Linkedin</a></div>
+    </div>
+    </header>
+
+  
+    <main>
+        <section>
+            <div><button id="toggleLoop">Stop animation</button></div>
+            <div>
+            <h1 id="output"></h1>
+           </div>
+           <div><h2>Michele Cristina Born</h2></div>
+           <div><h4 class="highlight">hello@micheleborn.com</h4></div>
+         
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <div><h3>Skills</h3></div>
+                <div>HTML +</div>
+                    <div>    CSS +</div>
+                        <div>    PHP +</div>
+                            <div>    JAVASCRIPT +</div>
+                                <div>   WORDPRESS THEMES +</div>
+                                    <div>    MARKETO +</div>
+                                        <div>   HUBSPOT +</div>
+                                            <div>   BOOTSTRAP +</div>
+        </div>
+        <div class="footer-right">
+            <div><h3>Chat GPT blurb</h3></div>
+            <div class="description">
+                I am a front-end developer based in Canada 
+                with an extensive career that began in 1998. 
+                Over the years, I have honed my expertise in various web technologies, 
+                but my specialization lies in WordPress. 
+              
+            </div>
+        
+        </div>
+     
+    </footer>
+</div>   
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const output = document.getElementById("output");
+    const toggleLoopButton = document.getElementById("toggleLoop");
+
+    const text = 'born<span style="color:#e2dfd9">michele</span>';
+    let currentIndex = 0;
+    let isStopped = false;
+
+    function getNextChar() {
+        if (text.substr(currentIndex, 6) === '<span ') {
+            const closingTagIndex = text.indexOf('</span>', currentIndex);
+            const spanTag = text.substring(currentIndex, closingTagIndex + 7);
+            currentIndex = closingTagIndex + 7;
+            return spanTag;
+        } else {
+            return text[currentIndex++];
+        }
+    }
+
+    function displayLetter() {
+        if (isStopped) return;
+
+        if (currentIndex < text.length) {
+            const char = getNextChar();
+            output.innerHTML += char;
+            setTimeout(displayLetter, 100);
+        } else {
+            setTimeout(startFadeOut, 6000);
+        }
+    }
+
+    function startFadeOut() {
+        if (isStopped) return;
+
+        output.classList.add("fade-out");
+        setTimeout(clearAndRestart, 1000);
+    }
+
+    function clearAndRestart() {
+        if (isStopped) return;
+
+        output.innerHTML = '';
+        output.classList.remove("fade-out");
+        currentIndex = 0;
+        displayLetter();
+    }
+
+    toggleLoopButton.addEventListener('click', function () {
+        if (isStopped) {
+            // If it's currently stopped, start it again
+            isStopped = false;
+            toggleLoopButton.textContent = "Stop again";
+            displayLetter();
+        } else {
+            // Otherwise, stop the loop
+            isStopped = true;
+            toggleLoopButton.textContent = "Play again";
+        }
+    });
+
+    displayLetter();
+});
+
+
+</script>
+
+
+</body>
+</html>
+
